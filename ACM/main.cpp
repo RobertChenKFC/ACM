@@ -75,10 +75,23 @@
 //#include "Recursive/10063.h" // Knuth's Permutation *AC*
 //#include "Recursive/10098.h" // Generating Fast *AC*
 
+/* Dynamic Programming */
+//#include "Dynamic Programming/MaxSubarray.h"
+#include "Dynamic Programming/0_1_Knapsack.h"
+//#include "Dynamic Programming/00562.h" // Dividing Coins *AC*
+//#include "Dynamic Programming/00900.h" // Brick Wall Patterns *AC*
+//#include "Dynamic Programming/12149.h" // Feynman *AC*
+//#include "Dynamic Programming/12563.h" // Jin Ge Jin Qu Hao
+
 /* Longest Increasing Subsequence */
 //#include "LIS/LIS.h"
 //#include "LIS/00231.h" // Testing the CATCHER *AC*
 //#include "LIS/00497.h" // Strategic Defensive Initiative
+
+/* Longest Common Subsequence */
+//#include "LCS/LCS.h"
+//#include "LCS/10056.h" // The Twin Towers *AC*
+//#include "LCS/10192.h" // Vacation *AC*
 
 /* Shortest Path */
 //#include "Shortest Path/ShortestPath.h"
