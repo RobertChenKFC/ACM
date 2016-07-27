@@ -10,6 +10,7 @@ const int JIN_GE_JIN_QU_TIME = 678;
 int main() {
 	int songs[MAX_SONGS], times[MAX_TIME];
 	bool table[MAX_SONGS][MAX_TIME];
+	bool chosen[MAX_SONGS];
 
 	int numCases;
 	cin >> numCases;
@@ -27,7 +28,7 @@ int main() {
 			for(int i = 0; i < numSongs; i++)
 				memset(table[i], false, sizeof(table[i]));
 			for(int i = 0; i < numSongs; i++) {
-				for(int j = timeLim - 1; j >= songs[i]; j--) {
+				for(int j = timeLim; j >= songs[i]; j--) {
 					if(times[j - songs[i]] + songs[i] > times[j]) {
 						times[j] = times[j - songs[i]] + songs[i];
 						table[i][j] = true;
@@ -45,44 +46,27 @@ int main() {
 			}
 			*/
 
-			int songsChosen = 0, totalTime;
-			if(times[timeLim - 1] == timeLim) {
-				int shortest = INT_MAX;
-				int i = numSongs - 1, j = timeLim - 1;
-				while(true) {
-					if(!table[i][j]) {
-						if(i == 0)
-							break;
-						i--;
-					}
-					else {
-						songsChosen++;
-						if(shortest > songs[i])
-							shortest = songs[i];
-						if(i == 0)
-							break;
-						j = timeLim - songs[i] - 1, i--;
-					}
+			memset(chosen, false, sizeof(chosen));
+			int songsChosen = 0, totalTime = times[timeLim], largest = INT_MIN;
+			for(int i = numSongs - 1, j = timeLim; i >= 0; i--) {
+				if(table[i][j]) {
+					songsChosen++, chosen[i] = true;
+					if(songs[i] > largest)
+						largest = songs[i];
+					j -= songs[i];
 				}
-				totalTime = times[timeLim - 1] - shortest + JIN_GE_JIN_QU_TIME;
 			}
-			else {
-				int i = numSongs - 1, j = timeLim - 1;
-				while(true) {
-					if(!table[i][j]) {
-						if(i == 0)
-							break;
-						i--;
-					}
-					else {
-						songsChosen++;
-						if(i == 0)
-							break;
-						j = timeLim - songs[i] - 1, i--;
-					}
-				}
-				songsChosen++, totalTime = times[timeLim - 1] + JIN_GE_JIN_QU_TIME;
+			int secondLargest = INT_MIN;
+			for(int i = 0; i < numSongs; i++) {
+				if(!chosen[i] && songs[i] > secondLargest)
+					secondLargest = songs[i];
 			}
+
+			if(totalTime == timeLim)
+				totalTime += JIN_GE_JIN_QU_TIME - largest + secondLargest;
+			else
+				totalTime += JIN_GE_JIN_QU_TIME, songsChosen++;
+
 			cout << "Case " << caseNum << ": " << songsChosen << " " << totalTime << endl;
 		}
 	}
