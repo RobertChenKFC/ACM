@@ -87,7 +87,8 @@
 /* Longest Increasing Subsequence */
 //#include "LIS/LIS.h"
 //#include "LIS/00231.h" // Testing the CATCHER *AC*
-#include "LIS/00497.h" // Strategic Defensive Initiative *AC*
+//#include "LIS/00497.h" // Strategic Defensive Initiative *AC*
+#include "LIS/10131.h" // Is Bigger Smarter?
 
 /* Longest Common Subsequence */
 //#include "LCS/LCS.h"
