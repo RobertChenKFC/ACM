@@ -78,7 +78,7 @@
 /* Dynamic Programming */
 //#include "Dynamic Programming/MaxSubarray.h"
 //#include "Dynamic Programming/0_1_Knapsack.h"
-#include "Dynamic Programming/00357.h" // Let Me Count The Ways
+//#include "Dynamic Programming/00357.h" // Let Me Count The Ways
 //#include "Dynamic Programming/00562.h" // Dividing Coins *AC*
 //#include "Dynamic Programming/00900.h" // Brick Wall Patterns *AC*
 //#include "Dynamic Programming/12149.h" // Feynman *AC*
@@ -91,8 +91,9 @@
 
 /* Longest Common Subsequence */
 //#include "LCS/LCS.h"
-#include "LCS/00111.h" // History Grading *AC*
+//#include "LCS/00111.h" // History Grading *AC*
 //#include "LCS/10056.h" // The Twin Towers *AC*
+#include "LCS/10100.h" // Longest Match *AC*
 //#include "LCS/10192.h" // Vacation *AC*
 
 /* Shortest Path */
