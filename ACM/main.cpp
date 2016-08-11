@@ -85,7 +85,7 @@
 //#include "Dynamic Programming/12563.h" // Jin Ge Jin Qu Hao
 
 /* Longest Increasing Subsequence */
-//#include "LIS/LIS.h"
+#include "LIS/LIS.h"
 //#include "LIS/00231.h" // Testing the CATCHER *AC*
 //#include "LIS/00497.h" // Strategic Defensive Initiative
 
@@ -93,7 +93,7 @@
 //#include "LCS/LCS.h"
 //#include "LCS/00111.h" // History Grading *AC*
 //#include "LCS/10056.h" // The Twin Towers *AC*
-#include "LCS/10100.h" // Longest Match *AC*
+//#include "LCS/10100.h" // Longest Match *AC*
 //#include "LCS/10192.h" // Vacation *AC*
 
 /* Shortest Path */
