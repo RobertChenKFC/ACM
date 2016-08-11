@@ -81,7 +81,7 @@
 //#include "Dynamic Programming/00562.h" // Dividing Coins *AC*
 //#include "Dynamic Programming/00900.h" // Brick Wall Patterns *AC*
 //#include "Dynamic Programming/12149.h" // Feynman *AC*
-#include "Dynamic Programming/12563.h" // Jin Ge Jin Qu Hao
+//#include "Dynamic Programming/12563.h" // Jin Ge Jin Qu Hao
 
 /* Longest Increasing Subsequence */
 //#include "LIS/LIS.h"
@@ -90,6 +90,7 @@
 
 /* Longest Common Subsequence */
 //#include "LCS/LCS.h"
+#include "LCS/00111.h" // History Grading *AC*
 //#include "LCS/10056.h" // The Twin Towers *AC*
 //#include "LCS/10192.h" // Vacation *AC*
 
