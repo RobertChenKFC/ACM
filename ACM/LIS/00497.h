@@ -1,44 +1,55 @@
-#include <cstdio>
+// Strategic Defense Initiative *AC*
+
 #include <iostream>
+#include <vector>
 #include <sstream>
 #include <string>
+#include <cstring>
 #include <deque>
-#include <vector>
-#include <map>
+#include <algorithm>
 
 using namespace std;
 
 int main() {
-	int numCases;
-	cin >> numCases;
-	getchar();
-	for(int caseNum = 0; caseNum < numCases; caseNum++) {
-		deque<int> heights;
-		map<int, int> table;
-		int h;
-		int curH = 0;
-		while(cin >> h) {
-			heights.push_back(h);
-			table[curH++] = h;
+	int n;
+	cin >> n;
+	cin.ignore();
+	cin.ignore();
+	for(int curCase = 1; curCase <= n; curCase++) {
+		vector<int> missles;
+		string input;
+		while(getline(cin, input) && input.length() != 0) {
+			stringstream ss;
+			int height;
+			ss << input, ss >> height;
+			missles.push_back(height);
 		}
 
-		int size = heights.size();
-		vector<int> finals(size, 1);
-		for(int i = 0; i < size; i++) {
-			for(int j = 0; j < size; j++) {
-				if(finals[i] + 1 > finals[j])
-					finals[j] = finals[i] + 1;
+		int numMissles = missles.size();
+		vector<int> lis, pos(numMissles, -1);
+		lis.push_back(missles.front()), pos[0] = 0;
+		for(int i = 0; i < numMissles; i++) {
+			int cur = missles[i];
+			if(cur > lis.back()) pos[i] = lis.size(), lis.push_back(cur);
+			else {
+				vector<int>::iterator it = upper_bound(lis.begin(), lis.end(), cur);
+				int curPos = it - lis.begin();
+				if(curPos < lis.size()) *it = cur, pos[i] = it - lis.begin();
+				else pos[i] = lis.size() - 1;
 			}
 		}
+		if(curCase != 1) cout << endl;
+		cout << "Max hits: " << lis.size() << endl;
 
-		int maxHits = finals.size();
-		cout << "Max hits: " << maxHits;
-		int curLen = -1;
-		for(int i = maxHits - 1; i >= 0; i--) {
-			if(finals[i] != curLen) {
-				curLen = finals[i];
-				cout << endl << table[finals[i]];
+		deque<int> content;
+		int cur = lis.size() - 1;
+		for(int i = numMissles - 1; i >= 0 && cur >= 0; i--) {
+			if(pos[i] == cur) {
+				content.push_front(missles[i]);
+				cur--;
 			}
 		}
+		for(int i = 0; i < content.size(); i++)
+			cout << content[i] << endl;
 	}
 }
