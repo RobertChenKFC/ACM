@@ -47,66 +47,44 @@ int main() {
 
 	// calculating length and getting content (strictly increasing)
 	cout << "Calculating length and getting content (strictly increasing): " << endl;
-	vector<int> lis, pos(n, 0);
-	lis.push_back(seq.front()), pos[0] = 0;
-	for(int i = 1; i < n; i++) {
-		int cur = seq[i];
-		// position is the last
-		if(cur > lis.back()) lis.push_back(cur), pos[i] = lis.size() - 1;
-		// position is the first
-		else if(cur < lis.front()) lis.front(), pos[i] = 0;
-		// position is the upper bound's position
-		else {
-			vector<int>::iterator it = upper_bound(lis.begin(), lis.end(), cur);
-			*it = cur, pos[i] = it - lis.begin();
+	vector<int> lens(n, 1);
+	int maxLen;
+	for(int i = 0; i < n; i++) {
+		for(int j = i + 1; j < n; j++) {
+			if((seq[j] > seq[i]) && (lens[i] + 1 > lens[j]))
+				lens[j] = lens[i] + 1, maxLen = lens[j];
 		}
 	}
-	int len = lis.size(), foundPos = len - 1;
-	deque<int> lisContent;
-	cout << "LIS length: " << len << endl;
-	for(int i = n - 1; i >= 0 && foundPos >= 0; i--) {
-		// retrace positions
-		if(pos[i] == foundPos) {
-			lisContent.push_front(seq[i]);
-			foundPos--;
-		}
-	}
+	cout << "LIS length: " << maxLen << endl;
 	cout << "LIS: ";
-	for(int i = 0; i < lisContent.size(); i++)
-		cout << lisContent[i] << " ";
+	deque<int> content;
+	int curLen = maxLen;
+	for(int i = n - 1; i >= 0 && curLen > 0; i--) {
+		if(lens[i] == curLen)
+			content.push_front(seq[i]), curLen--;
+	}
+	for(int i = 0; i < maxLen; i++)
+		cout << content[i] << " ";
 	cout << endl;
 
 	// calculating length and getting content (nonstrictly increasing)
 	cout << "Calculating length and getting content (nonstrictly increasing): " << endl;
-	lis.clear();
-	lis.push_back(seq.front()), pos[0] = 0;
-	for(int i = 1; i < n; i++) {
-		int cur = seq[i];
-		// position is the last
-		if(cur > lis.back()) lis.push_back(cur), pos[i] = lis.size() - 1;
-		// position is the first
-		else if(cur < lis.front()) lis.front(), pos[i] = 0;
-		// position is the upper bound's position
-		else {
-			vector<int>::iterator it = upper_bound(lis.begin(), lis.end(), cur);
-			int curPos = it - lis.begin();
-			if(curPos >= lis.size()) lis.push_back(cur);
-			else *it = cur;
-			pos[i] = curPos;
+	fill(lens.begin(), lens.end(), 1);
+	for(int i = 0; i < n; i++) {
+		for(int j = i + 1; j < n; j++) {
+			if((seq[j] >= seq[i]) && (lens[i] + 1 > lens[j]))
+				lens[j] = lens[i] + 1, maxLen = lens[j];
 		}
 	}
-	len = lis.size(), foundPos = len - 1;
-	lisContent.clear();
-	cout << "LIS length: " << len << endl;
-	for(int i = n - 1; i >= 0 && foundPos >= 0; i--) {
-		// retrace positions
-		if(pos[i] == foundPos) {
-			lisContent.push_front(seq[i]);
-			foundPos--;
-		}
-	}
+	cout << "LIS length: " << maxLen << endl;
 	cout << "LIS: ";
-	for(int i = 0; i < lisContent.size(); i++)
-		cout << lisContent[i] << " ";
+	content.clear();
+	curLen = maxLen;
+	for(int i = n - 1; i >= 0 && curLen > 0; i--) {
+		if(lens[i] == curLen)
+			content.push_front(seq[i]), curLen--;
+	}
+	for(int i = 0; i < maxLen; i++)
+		cout << content[i] << " ";
 	cout << endl;
 }
