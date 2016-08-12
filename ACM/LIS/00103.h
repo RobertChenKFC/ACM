@@ -1,85 +1,65 @@
+
 #include <iostream>
-#include <vector>
 #include <algorithm>
-#include <sstream>
 #include <cstring>
 
 using namespace std;
 
-const int MAX_DIM = 10, MAX_BOXES = 30;
+const int MAX_D = 15, MAX_BOX = 35;
 
 struct Box {
+	int id;
+	int s[MAX_D];
 	int d;
-	int s[MAX_DIM];
-	int i;
 
 	void dSort() { sort(s, s + d); }
-	void operator=(const Box &rhs) {
-		d = rhs.d, i = rhs.i;
-		memcpy(s, rhs.s, sizeof(s));
-	}
 	bool operator<(const Box &rhs) const {
-		bool less = true;
-		for(int i = 0; i < d; i++) {
-			if(s[i] > rhs.s[i]) {
-				less = false;
-				break;
-			}
-		}
-		return less;
+		for(int i = 0; i < d; i++)
+			if(s[i] >= rhs.s[i]) return false;
+		return true;
 	}
-	bool operator>(const Box &rhs) const {
-		bool greater = true;
-		for(int i = 0; i < d; i++) {
-			if(s[i] < rhs.s[i]) {
-				greater = false;
-				break;
-			}
-		}
-		return greater;
-	}
-	bool operator>=(const Box &rhs) const { return !(*this < rhs); }
-	bool operator<=(const Box &rhs) const { return !(*this > rhs); }
 };
 
-int main() {
-	int n, d;
-	Box boxes[MAX_BOXES];
-	int pos[MAX_BOXES];
+bool cmp(const Box &a, const Box &b) {
+	for(int i = 0; i < a.d; i++) {
+		if(a.s[i] < b.s[i]) return true;
+		if(a.s[i] > b.s[i]) return false;
+	}
+	return true;
+}
 
+int main() {
+	Box boxes[MAX_BOX];
+	int len[MAX_BOX], out[MAX_BOX];
+
+	int n, d;
 	while(cin >> n >> d) {
 		for(int i = 0; i < n; i++) {
-			boxes[i].d = d, boxes[i].i = i;
+			boxes[i].id = i, boxes[i].d = d;
 			for(int j = 0; j < d; j++)
 				cin >> boxes[i].s[j];
 			boxes[i].dSort();
 		}
 
-		sort(boxes, boxes + n);
+		sort(boxes, boxes + n, cmp);
 
-		vector<Box> lis;
-		lis.push_back(boxes[0]), pos[0] = 0;
-		for(int i = 1; i < n; i++) {
-			Box cur = boxes[i];
-			if(cur > lis.back()) pos[i] = lis.size(), lis.push_back(cur);
-			else {
-				vector<Box>::iterator it = lower_bound(lis.begin(), lis.end(), cur);
-				*it = cur, pos[i] = it - lis.begin();
+		fill(len, len + n, 1);
+		for(int i = 0; i < n; i++) {
+			for(int j = i + 1; j < n; j++) {
+				if((boxes[i] < boxes[j]) && (len[i] + 1 > len[j]))
+					len[j] = len[i] + 1;
 			}
 		}
-
-		cout << lis.size() << endl;
-		int cur = lis.size() - 1;
-		stringstream ss;
-		for(int i = cur; i >= 0; i--) {
-			if(pos[i] == cur) {
-				ss << boxes[pos[i]].i + 1 << " ";
-				cur--;
-			}
+		int maxLen = *max_element(len, len + n);
+		cout << maxLen << endl;
+		for(int i = n - 1, cur = maxLen; i >= 0; i--) {
+			if(len[i] == cur)
+				out[--cur] = boxes[i].id + 1;
 		}
-		string s;
-		ss >> s, cout << s;
-		while(cout << " ", ss >> s, cout << s);
+		for(int i = 0; i < maxLen; i++) {
+			if(i != 0) cout << " ";
+			cout << out[i];
+		}
 		cout << endl;
 	}
 }
