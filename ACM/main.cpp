@@ -86,7 +86,7 @@
 
 /* Longest Increasing Subsequence */
 //#include "LIS/LIS.h"
-#include "LIS/00103.h" // Stacking boxes
+//#include "LIS/00103.h" // Stacking boxes
 //#include "LIS/00231.h" // Testing the CATCHER *AC*
 //#include "LIS/00497.h" // Strategic Defensive Initiative *AC*
 //#include "LIS/10131.h" // Is Bigger Smarter? *AC*
@@ -97,6 +97,10 @@
 //#include "LCS/10056.h" // The Twin Towers *AC*
 //#include "LCS/10100.h" // Longest Match *AC*
 //#include "LCS/10192.h" // Vacation *AC*
+
+/* Tree */
+//#include "Tree/Tree.h"
+#include "Tree/00112.h" // Tree Summing
 
 /* Shortest Path */
 //#include "Shortest Path/ShortestPath.h"
