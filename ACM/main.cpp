@@ -103,7 +103,9 @@
 //#include "Tree/00112.h" // Tree Summing
 
 /* Minimum Cost Spanning Tree */
-#include "MST/MST.h"
+//#include "MST/MST.h"
+//#include "MST/10034.h" // Freckles
+#include "MST/10147.h" // Highway
 
 
 /* Shortest Path */
