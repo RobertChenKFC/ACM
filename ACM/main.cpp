@@ -100,7 +100,11 @@
 
 /* Tree */
 //#include "Tree/Tree.h"
-#include "Tree/00112.h" // Tree Summing
+//#include "Tree/00112.h" // Tree Summing
+
+/* Minimum Cost Spanning Tree */
+#include "MST/MST.h"
+
 
 /* Shortest Path */
 //#include "Shortest Path/ShortestPath.h"
