@@ -138,7 +138,8 @@
 /* Misc */
 //#include "Misc/RepeatingDecimals.h"
 //#include "Misc/00136.h" // Ugly Numbers *AC*
-#include "Misc/00202.h" // Repeating Decimals *AC*
+//#include "Misc/00202.h" // Repeating Decimals *AC*
+#include "Misc/00350.h" // Pseudo-Random Numbers *AC*
 //#include "Misc/00392.h" // Polynomial Showdown *AC*
 //#include "Misc/00494.h" // Kindergarten Counting Game *AC*
 //#include "Misc/00713.h" // Adding Reversed Numbers *AC*
