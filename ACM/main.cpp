@@ -105,7 +105,7 @@
 /* Minimum Cost Spanning Tree */
 //#include "MST/MST.h"
 //#include "MST/10034.h" // Freckles
-#include "MST/10147.h" // Highway
+//#include "MST/10147.h" // Highway
 
 
 /* Shortest Path */
@@ -136,6 +136,7 @@
 //#include "Topological Search/10305.h" // Ordering Tasks *AC*
 
 /* Misc */
+#include "Misc/RepeatingDecimals.h"
 //#include "Misc/00136.h" // Ugly Numbers *AC*
 //#include "Misc/00392.h" // Polynomial Showdown *AC*
 //#include "Misc/00494.h" // Kindergarten Counting Game *AC*
