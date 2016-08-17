@@ -122,6 +122,7 @@
 
 /* Depth First Search */
 //#include "DFS/DFS.h"
+#include "DFS/00280.h" // Vertex *AC*
 //#include "DFS/10301.h" // Rings and Glue *AC*
 //#include "DFS/10336.h" // Rank the Languages *AC*
 
@@ -144,7 +145,7 @@
 //#include "Misc/00355.h" // The Bases Are Loaded *AC*
 //#include "Misc/00392.h" // Polynomial Showdown *AC*
 //#include "Misc/00494.h" // Kindergarten Counting Game *AC*
-#include "Misc/00619.h" // Numerically Speaking
+//#include "Misc/00619.h" // Numerically Speaking
 //#include "Misc/00713.h" // Adding Reversed Numbers *AC*
 //#include "Misc/10252.h" // Common Permutation *AC*
 //#include "Misc/11577.h" // Letter Frequency *AC*
