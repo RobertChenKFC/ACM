@@ -69,6 +69,7 @@
 
 /* Recursive */
 //#include "Recursive/00176.h" // The Sultan's Successors *AC*
+#include "Recursive/00258.h" // Mirror Maze
 //#include "Recursive/00412.h" // Pi *AC*
 //#include "Recursive/00441.h" // Lotto *AC*
 //#include "Recursive/00750.h" // 8 Queens Chess Problem *AC*
@@ -122,7 +123,7 @@
 
 /* Depth First Search */
 //#include "DFS/DFS.h"
-#include "DFS/00280.h" // Vertex *AC*
+//#include "DFS/00280.h" // Vertex *AC*
 //#include "DFS/10301.h" // Rings and Glue *AC*
 //#include "DFS/10336.h" // Rank the Languages *AC*
 
