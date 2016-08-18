@@ -69,7 +69,7 @@
 
 /* Recursive */
 //#include "Recursive/00176.h" // The Sultan's Successors *AC*
-#include "Recursive/00258.h" // Mirror Maze
+//#include "Recursive/00258.h" // Mirror Maze
 //#include "Recursive/00412.h" // Pi *AC*
 //#include "Recursive/00441.h" // Lotto *AC*
 //#include "Recursive/00750.h" // 8 Queens Chess Problem *AC*
@@ -136,6 +136,9 @@
 /* Topological Search */
 //#include "Topological Search/00124.h" // Following Orders *AC*
 //#include "Topological Search/10305.h" // Ordering Tasks *AC*
+
+/* Euler Circuit */
+#include "Euler Circuit/EulerCircuit.h"
 
 /* Misc */
 //#include "Misc/RepeatingDecimals.h"
