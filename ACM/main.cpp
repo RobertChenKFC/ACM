@@ -139,7 +139,11 @@
 
 /* Euler Circuit */
 //#include "Euler Circuit/EulerCircuit.h"
-#include "Euler Circuit/10129.h" // Play On Words *AC*
+//#include "Euler Circuit/10129.h" // Play On Words *AC*
+
+/* Stack */
+//#include "Stack/Parentheses.h"
+#include "Stack/00673.h" // Parentheses Balance *AC*
 
 /* Misc */
 //#include "Misc/RepeatingDecimals.h"
