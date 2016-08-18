@@ -138,7 +138,8 @@
 //#include "Topological Search/10305.h" // Ordering Tasks *AC*
 
 /* Euler Circuit */
-#include "Euler Circuit/EulerCircuit.h"
+//#include "Euler Circuit/EulerCircuit.h"
+#include "Euler Circuit/10129.h" // Play On Words *AC*
 
 /* Misc */
 //#include "Misc/RepeatingDecimals.h"
