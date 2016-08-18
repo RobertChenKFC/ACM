@@ -76,6 +76,12 @@
 //#include "Recursive/10063.h" // Knuth's Permutation *AC*
 //#include "Recursive/10098.h" // Generating Fast *AC*
 
+/* Stack */
+//#include "Stack/Parentheses.h"
+//#include "Stack/H_Sequence.h"
+//#include "Stack/00271.h" // Simply Syntax *AC*
+//#include "Stack/00673.h" // Parentheses Balance *AC*
+
 /* Dynamic Programming */
 //#include "Dynamic Programming/MaxSubarray.h"
 //#include "Dynamic Programming/0_1_Knapsack.h"
@@ -107,7 +113,6 @@
 //#include "MST/MST.h"
 //#include "MST/10034.h" // Freckles
 //#include "MST/10147.h" // Highway
-
 
 /* Shortest Path */
 //#include "Shortest Path/ShortestPath.h"
@@ -141,9 +146,9 @@
 //#include "Euler Circuit/EulerCircuit.h"
 //#include "Euler Circuit/10129.h" // Play On Words *AC*
 
-/* Stack */
-//#include "Stack/Parentheses.h"
-#include "Stack/00673.h" // Parentheses Balance *AC*
+/* Articulation Point */
+//#include "AP/AP.h"
+#include "AP/00315.h" // Network *AC*
 
 /* Misc */
 //#include "Misc/RepeatingDecimals.h"
