@@ -78,7 +78,7 @@
 
 /* Subset */
 //#include "Subset/Subset.h"
-#include "Subset/k_Subset.h"
+//#include "Subset/k_Subset.h"
 
 /* Stack */
 //#include "Stack/Parentheses.h"
@@ -164,6 +164,7 @@
 //#include "Misc/00355.h" // The Bases Are Loaded *AC*
 //#include "Misc/00392.h" // Polynomial Showdown *AC*
 //#include "Misc/00494.h" // Kindergarten Counting Game *AC*
+#include "Misc/00498.h" // Polly the Polynomial *AC*
 //#include "Misc/00619.h" // Numerically Speaking
 //#include "Misc/00713.h" // Adding Reversed Numbers *AC*
 //#include "Misc/10252.h" // Common Permutation *AC*
