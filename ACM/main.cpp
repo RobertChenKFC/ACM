@@ -76,6 +76,10 @@
 //#include "Recursive/10063.h" // Knuth's Permutation *AC*
 //#include "Recursive/10098.h" // Generating Fast *AC*
 
+/* Subset */
+//#include "Subset/Subset.h"
+#include "Subset/k_Subset.h"
+
 /* Stack */
 //#include "Stack/Parentheses.h"
 //#include "Stack/H_Sequence.h"
@@ -149,7 +153,7 @@
 /* Articulation Point */
 //#include "AP/AP.h"
 //#include "AP/00315.h" // Network *AC*
-#include "AP/10199.h" // Tourist Guide
+//#include "AP/10199.h" // Tourist Guide
 
 /* Misc */
 //#include "Misc/RepeatingDecimals.h"
