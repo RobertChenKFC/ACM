@@ -1,4 +1,4 @@
-// Points in Figures: Rectangle *AC*
+// Points in Figures: Rectangles *AC*
 
 #include <iostream>
 #include <string>
