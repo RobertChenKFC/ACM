@@ -2,11 +2,9 @@
 
 using namespace std;
 
-const int MAX = 100;
+const int MAX = 64;
 
-struct BinaryField {
-	unsigned n : MAX;
-};
+typedef unsigned long long int64;
 
 int main() {
 	int arr[MAX];
@@ -15,23 +13,21 @@ int main() {
 	cin >> len;
 	for(int i = 0; i < len; i++) cin >> arr[i];
 
-	BinaryField cap, maskCap;
-	cap.n = 1, maskCap.n = 1 << (len - 1);
-	for(int i = 0; i < len - 1; i++) cap.n <<= 1, cap.n |= 1;
-	cap.n++;
+	int64 cap = 1, maskCap = 1 << (len - 1);
+	for(int i = 0; i < len - 1; i++) cap <<= 1, cap |= 1;
+	cap++;
 
-	BinaryField cur;
+	int64 cur = 0;
 	int setNum = 1;
-	cur.n = 0;
 	do {
 		cout << setNum++ << ": ";
 
-		BinaryField mask;
+		int64 mask;
 		int i;
-		for(mask.n = 1, i = 0; mask.n < maskCap.n; mask.n <<= 1, i++)
-			if(cur.n & mask.n) cout << arr[i] << " ";
-		if(cur.n & mask.n) cout << arr[i] << " ";
+		for(mask = 1, i = 0; mask < maskCap; mask <<= 1, i++)
+			if(cur & mask) cout << arr[i] << " ";
+		if(cur & mask) cout << arr[i] << " ";
 
 		cout << endl;
-	} while(cur.n++, cur.n != cap.n);
+	} while(cur++, cur != cap);
 }
