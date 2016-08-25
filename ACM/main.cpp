@@ -6,6 +6,7 @@
 //#include "Big Number/10013.h" // Super Long Sums *AC*
 //#include "Big Number/10070.h" // Leap Year or Not Leap Year and... *AC*
 //#include "Big Number/10079.h" // Pizza Cutting *AC*
+#include "Big Number/10106.h" // Product *AC*
 //#include "Big Number/10464.h" // Big Big Real Numbers
 
 /* Prime */
@@ -164,7 +165,7 @@
 //#include "Misc/00355.h" // The Bases Are Loaded *AC*
 //#include "Misc/00392.h" // Polynomial Showdown *AC*
 //#include "Misc/00494.h" // Kindergarten Counting Game *AC*
-#include "Misc/00498.h" // Polly the Polynomial *AC*
+//#include "Misc/00498.h" // Polly the Polynomial *AC*
 //#include "Misc/00619.h" // Numerically Speaking
 //#include "Misc/00713.h" // Adding Reversed Numbers *AC*
 //#include "Misc/10252.h" // Common Permutation *AC*
