@@ -166,7 +166,8 @@
 //#include "Misc/00355.h" // The Bases Are Loaded *AC*
 //#include "Misc/00392.h" // Polynomial Showdown *AC*
 //#include "Misc/00476.h" // Points in Figures: Rectangles *AC*
-#include "Misc/00477.h"// Points in Figures: Rectangles and Circles *AC*
+//#include "Misc/00477.h"// Points in Figures: Rectangles and Circles *AC*
+#include "Misc/00478.h" // Points in Figures: Rectangles, Circles, Triangles *AC*
 //#include "Misc/00494.h" // Kindergarten Counting Game *AC*
 //#include "Misc/00498.h" // Polly the Polynomial *AC*
 //#include "Misc/00619.h" // Numerically Speaking
