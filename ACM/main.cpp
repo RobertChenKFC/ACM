@@ -66,7 +66,7 @@
 
 /* Binary Search */
 //#include "Binary Search/BinarySearch.h"
-#include "Binary Search/01152.h" // 4 Values whose Sum is 0 *AC*
+//#include "Binary Search/01152.h" // 4 Values whose Sum is 0 *AC*
 //#include "Binary Search/10539.h" // Almost Prime Numbers *AC*
 //#include "Binary Search/12097.h" // Pie *AC*
 
@@ -92,6 +92,8 @@
 /* Dynamic Programming */
 //#include "Dynamic Programming/MaxSubarray.h"
 //#include "Dynamic Programming/0_1_Knapsack.h"
+#include "Dynamic Programming/00147.h" // Dollars *AC*
+//#include "Dynamic Programming/00166.h" // Making Change
 //#include "Dynamic Programming/00357.h" // Let Me Count The Ways *AC*
 //#include "Dynamic Programming/00562.h" // Dividing Coins *AC*
 //#include "Dynamic Programming/00674.h" // Coin Change *AC*
