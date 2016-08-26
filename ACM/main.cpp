@@ -91,11 +91,11 @@
 /* Dynamic Programming */
 //#include "Dynamic Programming/MaxSubarray.h"
 //#include "Dynamic Programming/0_1_Knapsack.h"
-//#include "Dynamic Programming/00357.h" // Let Me Count The Ways
+#include "Dynamic Programming/00357.h" // Let Me Count The Ways *AC*
 //#include "Dynamic Programming/00562.h" // Dividing Coins *AC*
 //#include "Dynamic Programming/00900.h" // Brick Wall Patterns *AC*
 //#include "Dynamic Programming/12149.h" // Feynman *AC*
-#include "Dynamic Programming/12563.h" // Jin Ge Jin Qu Hao *AC*
+//#include "Dynamic Programming/12563.h" // Jin Ge Jin Qu Hao *AC*
 
 /* Longest Increasing Subsequence */
 //#include "LIS/LIS.h"
