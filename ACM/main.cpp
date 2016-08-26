@@ -95,7 +95,7 @@
 //#include "Dynamic Programming/00562.h" // Dividing Coins *AC*
 //#include "Dynamic Programming/00900.h" // Brick Wall Patterns *AC*
 //#include "Dynamic Programming/12149.h" // Feynman *AC*
-//#include "Dynamic Programming/12563.h" // Jin Ge Jin Qu Hao
+#include "Dynamic Programming/12563.h" // Jin Ge Jin Qu Hao *AC*
 
 /* Longest Increasing Subsequence */
 //#include "LIS/LIS.h"
@@ -167,7 +167,7 @@
 //#include "Misc/00392.h" // Polynomial Showdown *AC*
 //#include "Misc/00476.h" // Points in Figures: Rectangles *AC*
 //#include "Misc/00477.h"// Points in Figures: Rectangles and Circles *AC*
-#include "Misc/00478.h" // Points in Figures: Rectangles, Circles, Triangles *AC*
+//#include "Misc/00478.h" // Points in Figures: Rectangles, Circles, Triangles *AC*
 //#include "Misc/00494.h" // Kindergarten Counting Game *AC*
 //#include "Misc/00498.h" // Polly the Polynomial *AC*
 //#include "Misc/00619.h" // Numerically Speaking
