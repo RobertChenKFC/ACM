@@ -92,7 +92,7 @@
 /* Dynamic Programming */
 //#include "Dynamic Programming/MaxSubarray.h"
 //#include "Dynamic Programming/0_1_Knapsack.h"
-#include "Dynamic Programming/00147.h" // Dollars *AC*
+//#include "Dynamic Programming/00147.h" // Dollars *AC*
 //#include "Dynamic Programming/00166.h" // Making Change
 //#include "Dynamic Programming/00357.h" // Let Me Count The Ways *AC*
 //#include "Dynamic Programming/00562.h" // Dividing Coins *AC*
@@ -160,6 +160,9 @@
 //#include "AP/AP.h"
 //#include "AP/00315.h" // Network *AC*
 //#include "AP/10199.h" // Tourist Guide
+
+/* STL Containers and Adapters */
+#include "STL/b298.h" // *AC*
 
 /* Misc */
 //#include "Misc/RepeatingDecimals.h"
