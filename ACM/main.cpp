@@ -58,7 +58,7 @@
 //#include "Greedy Algorithm/01605.h" // Building for UN *AC*
 //#include "Greedy Algorithm/10954.h" // Add All *AC*
 //#include "Greedy Algorithm/11269.h" // Setting Problems *AC*
-#include "Greedy Algorithm/b231.h" // *AC*
+//#include "Greedy Algorithm/b231.h" // *AC*
 
 /* Divide and Conquer */
 //#include "Divide and Conquer/00254.h" // Towers of Hanoi *TLE*
@@ -71,6 +71,7 @@
 //#include "Binary Search/01152.h" // 4 Values whose Sum is 0 *AC*
 //#include "Binary Search/10539.h" // Almost Prime Numbers *AC*
 //#include "Binary Search/12097.h" // Pie *AC*
+#include "Binary Search/TIOJ_1805.h"
 
 /* Recursive */
 //#include "Recursive/00176.h" // The Sultan's Successors *AC*
