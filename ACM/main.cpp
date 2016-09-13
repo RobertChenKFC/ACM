@@ -102,7 +102,7 @@
 //#include "Dynamic Programming/00900.h" // Brick Wall Patterns *AC*
 //#include "Dynamic Programming/12149.h" // Feynman *AC*
 //#include "Dynamic Programming/12563.h" // Jin Ge Jin Qu Hao *AC*
-#include "Dynamic Programming/d637.h"
+//#include "Dynamic Programming/d637.h" // *AC*
 
 /* Longest Increasing Subsequence */
 //#include "LIS/LIS.h"
@@ -168,7 +168,7 @@
 //#include "STL/a813.h" // *TLE*
 //#include "STL/b298.h" // *AC*
 //#include "STL/b291.h" // *AC*
-//#include "STL/TIOJ_1807.h" // *TLE*
+#include "STL/TIOJ_1807.h" // *AC*
 
 /* Misc */
 //#include "Misc/RepeatingDecimals.h"

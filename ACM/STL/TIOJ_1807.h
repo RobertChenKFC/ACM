@@ -1,37 +1,36 @@
-// *TLE*
-
 #include <iostream>
-#include <cstring>
-#include <map>
-#include <set>
+#include <unordered_map>
 
 using namespace std;
 
+const int MAX = 1005;
+
 int main() {
-	int n, m;
-	cin >> n >> m;
+	unordered_map<int, int> table;
+	bool connected[MAX][MAX] = {};
 
-	map< int, set<int> > edges;
+	int n, edges;
+	cin >> n >> edges;
+
 	bool isSimple = true;
-	int a, b, t;
-	while(m--) {
-		cin >> a >> b;
+	int a, b, ina, inb;
+	while (edges--) {
+		cin >> ina >> inb;
 
-		if(isSimple) {
-			if(a > b) t = a, a = b, b = t;
+		if (isSimple) {
+			if (ina == inb) { isSimple = false; break; }
 
-			if(a == b) isSimple = false;
-			else if(edges.find(a) == edges.end())
-				edges[a] = set<int>({b});
-			else {
-				set<int> &cur = edges[a];
-				if(cur.find(b) == cur.end())
-					cur.insert(b);
-				else isSimple = false;
-			}
+			if (table.find(ina) == table.end()) a = table[ina] = table.size();
+			else a = table[ina];
+			if (table.find(inb) == table.end()) b = table[inb] = table.size();
+			else b = table[inb];
+
+			if (connected[a][b]) { isSimple = false; break; }
+			else connected[a][b] = connected[b][a] = true;
 		}
 	}
 
-	if(isSimple) cout << "yes" << endl;
+	if (isSimple) cout << "yes" << endl;
 	else cout << "Yes" << endl;
+
 }
