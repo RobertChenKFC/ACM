@@ -108,6 +108,7 @@
 //#include "LIS/LIS.h"
 //#include "LIS/00103.h" // Stacking boxes
 //#include "LIS/00231.h" // Testing the CATCHER *AC*
+#include "LIS/00481.h" // What Goes Up *AC*
 //#include "LIS/00497.h" // Strategic Defensive Initiative *AC*
 //#include "LIS/10131.h" // Is Bigger Smarter? *AC*
 
@@ -168,7 +169,7 @@
 //#include "STL/a813.h" // *TLE*
 //#include "STL/b298.h" // *AC*
 //#include "STL/b291.h" // *AC*
-#include "STL/TIOJ_1807.h" // *AC*
+//#include "STL/TIOJ_1807.h" // *AC*
 
 /* Misc */
 //#include "Misc/RepeatingDecimals.h"
