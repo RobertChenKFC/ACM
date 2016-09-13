@@ -34,6 +34,7 @@
 //#include "Sort/10194.h" // Football (aka Soccer) *RE*
 //#include "Sort/11369.h" // Shopaholic *AC*
 //#include "Sort/11462.h" // Age Sort *AC*
+#include "Sort/a233.h" // *AC*
 
 /* Simulation */
 //#include "Simulation/00100.h" // The 3n + 1 problem *AC*
@@ -166,7 +167,7 @@
 //#include "STL/a813.h" // *TLE*
 //#include "STL/b298.h" // *AC*
 //#include "STL/b291.h" // *AC*
-#include "STL/TIOJ_1807.h" // *TLE*
+//#include "STL/TIOJ_1807.h" // *TLE*
 
 /* Misc */
 //#include "Misc/RepeatingDecimals.h"
