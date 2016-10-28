@@ -35,6 +35,7 @@
 //#include "Sort/11369.h" // Shopaholic *AC*
 //#include "Sort/11462.h" // Age Sort *AC*
 //#include "Sort/a233.h" // *AC*
+#include "Sort/APCS_Q1.h"
 
 /* Simulation */
 //#include "Simulation/00100.h" // The 3n + 1 problem *AC*
@@ -71,7 +72,7 @@
 //#include "Binary Search/01152.h" // 4 Values whose Sum is 0 *AC*
 //#include "Binary Search/10539.h" // Almost Prime Numbers *AC*
 //#include "Binary Search/12097.h" // Pie *AC*
-#include "Binary Search/TIOJ_1805.h"
+//#include "Binary Search/TIOJ_1805.h"
 
 /* Recursive */
 //#include "Recursive/00176.h" // The Sultan's Successors *AC*
@@ -172,6 +173,10 @@
 //#include "STL/b298.h" // *AC*
 //#include "STL/b291.h" // *AC*
 //#include "STL/TIOJ_1807.h" // *AC*
+
+/* String */
+//#include "String/KMP.h"
+//#include "String/TIOJ_1306.h"
 
 /* Misc */
 //#include "Misc/RepeatingDecimals.h"
