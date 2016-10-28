@@ -35,7 +35,7 @@
 //#include "Sort/11369.h" // Shopaholic *AC*
 //#include "Sort/11462.h" // Age Sort *AC*
 //#include "Sort/a233.h" // *AC*
-#include "Sort/APCS_Q1.h"
+//#include "Sort/APCS_Q1.h"
 
 /* Simulation */
 //#include "Simulation/00100.h" // The 3n + 1 problem *AC*
@@ -52,6 +52,7 @@
 //#include "Simulation/10315.h" // Poker Hands *AC*
 //#include "Simulation/11000.h" // Bee *AC*
 //#include "Simulation/12174.h" // Shuffle *TLE*
+#include "Simulation/APCS_Q3.h"
 
 /* Greedy Algorithm */
 //#include "Greedy Algorithm/00311.h" // Packets *AC*
