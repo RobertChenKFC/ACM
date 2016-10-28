@@ -52,7 +52,7 @@
 //#include "Simulation/10315.h" // Poker Hands *AC*
 //#include "Simulation/11000.h" // Bee *AC*
 //#include "Simulation/12174.h" // Shuffle *TLE*
-#include "Simulation/APCS_Q3.h"
+//#include "Simulation/APCS_Q3.h"
 
 /* Greedy Algorithm */
 //#include "Greedy Algorithm/00311.h" // Packets *AC*
@@ -149,6 +149,7 @@
 //#include "DFS/00280.h" // Vertex *AC*
 //#include "DFS/10301.h" // Rings and Glue *AC*
 //#include "DFS/10336.h" // Rank the Languages *AC*
+#include "DFS/APCS_Q4.h"
 
 /* Breadth First Search */
 //#include "BFS/BFS.h"
